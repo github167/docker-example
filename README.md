@@ -1,6 +1,7 @@
 # docker-tomcat
 From: https://ithelp.ithome.com.tw/articles/10192938
-git clone
+
+git clone https://github.com/github167/docker-tomcat.git
 docker build -t tomcatserver .
 docker run --rm -d --name tomcat -p 8080:8080 tomcatserver
 docker inspect -f '{{.Mounts}}' tomcat
