@@ -34,6 +34,10 @@ http://localhost:8080/test/hello.htm
 
 docker run -d --name es -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.10.1
 
+7. jupyter notebook
+
+docker run --rm -d -p 8888:8888 jupyter/minimal-notebook
+
 http://localhost:9200
 
 
