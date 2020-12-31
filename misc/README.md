@@ -29,3 +29,7 @@ docker run --rm --name tomcat -p 8080:8080 -v $PWD/test:/usr/local/tomcat/webapp
 echo "hello world">test/hello.htm
 
 http://localhost:8080/test/hello.htm
+
+6. elasticsearch
+
+docker run -d --name es -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.3.2
