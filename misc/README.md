@@ -21,3 +21,11 @@ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:7 java Main
 docker pull docker.io/httpd
 
 docker run --rm -d --name test_web_server -p 8085:80 -v "$PWD"/website/:/usr/local/apache2/htdocs/ docker.io/httpd:latest
+
+5. tomcat
+
+docker run --rm --name tomcat -p 8080:8080 -v $PWD/test:/usr/local/tomcat/webapps/test -d tomcat
+
+echo "hello world">test/hello.htm
+
+http://localhost:8080/test/hello.htm
