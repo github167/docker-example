@@ -1,4 +1,3 @@
-Example 1:
 docker build -t volumetest .
 
 docker run --name vtest -it volumetest /bin/bash
