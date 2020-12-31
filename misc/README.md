@@ -13,3 +13,5 @@ docker run --rm -d -p 80:80 --name my_image nginx
 3. Java
 
 docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:7 javac Main.java
+
+docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:7 java Main
