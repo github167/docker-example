@@ -7,4 +7,5 @@ or
 docker run --rm --name jen -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
 
 2. nginx
+
 docker run --rm -d -p 80:80 --name my_image nginx
