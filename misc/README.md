@@ -15,3 +15,9 @@ docker run --rm -d -p 80:80 --name my_image nginx
 docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:7 javac Main.java
 
 docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:7 java Main
+
+4. httpd
+
+docker pull docker.io/httpd
+
+docker run --rm -d --name test_web_server -p 8085:80 -v "$PWD"/website/:/usr/local/apache2/htdocs/ docker.io/httpd:latest
