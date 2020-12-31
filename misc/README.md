@@ -36,7 +36,7 @@ docker run -d --name es -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node
 
 7. jupyter notebook
 
-docker run --rm -d -p 8888:8888 jupyter/minimal-notebook
+docker run --name jup --rm -d -p 8888:8888 jupyter/minimal-notebook
 
 http://localhost:9200
 
