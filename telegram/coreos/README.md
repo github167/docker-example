@@ -1,8 +1,14 @@
 From https://github.com/epfl-dojo/telegram-coreos-update
 
-docker run command in dockerfile
+1. docker run command in dockerfile
 
-# Telegram CoreOs update bot
+2. Modify the dockerfile
+
+a. line12: FROM node
+
+b. add line "COPY secrets.json /usr/src/app/"
+
+Telegram CoreOs update bot
 A telegram bot which send CoreOs updates [@CoreOSbot](https://t.me/CoreOSbot)
 
 When running [...] you will be able to use some of these commands:
