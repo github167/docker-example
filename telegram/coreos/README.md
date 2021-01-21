@@ -1,4 +1,6 @@
-# From https://github.com/epfl-dojo/telegram-coreos-update
+From https://github.com/epfl-dojo/telegram-coreos-update
+
+docker run command in dockerfile
 
 # Telegram CoreOs update bot
 A telegram bot which send CoreOs updates [@CoreOSbot](https://t.me/CoreOSbot)
