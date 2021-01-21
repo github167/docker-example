@@ -11,7 +11,7 @@ b. add line "COPY secrets.json /usr/src/app/"
 c. add the followiing code
 ```
 app.command('hello', (ctx) => {
-    return ctx.reply('One time keyboard')
+    return ctx.reply('Receive word hello')
 })
 ```
 
