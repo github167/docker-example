@@ -1,3 +1,5 @@
+# From https://github.com/epfl-dojo/telegram-coreos-update
+
 # Telegram CoreOs update bot
 A telegram bot which send CoreOs updates [@CoreOSbot](https://t.me/CoreOSbot)
 
