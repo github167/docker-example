@@ -8,6 +8,14 @@ a. line12: FROM node
 
 b. add line "COPY secrets.json /usr/src/app/"
 
+c. add the followiing code
+```
+app.command('hello', (ctx) => {
+    return ctx.reply('One time keyboard')
+})
+```
+
+
 Telegram CoreOs update bot
 A telegram bot which send CoreOs updates [@CoreOSbot](https://t.me/CoreOSbot)
 
