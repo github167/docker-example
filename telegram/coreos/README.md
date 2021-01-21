@@ -14,7 +14,7 @@ app.command('hello', (ctx) => {
     return ctx.reply('Receive word hello')
 })
 ```
-
+3. docker build -t abc .
 
 Telegram CoreOs update bot
 A telegram bot which send CoreOs updates [@CoreOSbot](https://t.me/CoreOSbot)
