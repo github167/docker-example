@@ -1,6 +1,6 @@
 From https://hub.docker.com/r/edjopato/telegramlockbot (https://github.com/EdJoPaTo/telegramLockBot)
 
-1.echo your_token > bot-token.txt
+1. echo your_token > bot-token.txt
 
 2. docker pull edjopato/telegramlockbot
 
