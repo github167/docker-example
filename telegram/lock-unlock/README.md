@@ -30,4 +30,4 @@ Another method:
 
 5. docker build -t lockbot .
 
-6. docker --rm -d --name one lockbot
+6. docker run --rm -d --name one lockbot
