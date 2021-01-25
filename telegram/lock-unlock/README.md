@@ -17,3 +17,17 @@ From https://hub.docker.com/r/edjopato/telegramlockbot (https://github.com/EdJoP
 Run:
 
 1. docker run --rm -d --name one edjopato/telegramlockbot
+
+Another method:
+
+1. git clone https://github.com/EdJoPaTo/telegramLockBot; cd telegramLockBot
+
+2. echo your_token > bot-token.txt
+
+3. add "COPY bot-token.txt /app" in Dockerfile
+
+4. rename the bot-token.txt in .dockerignore to xbot-token.txt
+
+5. docker build -t lockbot .
+
+6. docker --rm -d --name one lockbot
