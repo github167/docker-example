@@ -12,8 +12,8 @@ From https://hub.docker.com/r/edjopato/telegramlockbot (https://github.com/EdJoP
 
 6. docker system prune
 
-Check:
+7. docker run --rm edjopato/telegramlockbot cat /app/bot-token.txt
 
-1. docker run --rm edjopato/telegramlockbot cat /app/bot-token.txt
+Run:
 
-2. docker run --rm -d --name one edjopato/telegramlockbot
+1. docker run --rm -d --name one edjopato/telegramlockbot
