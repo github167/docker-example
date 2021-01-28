@@ -6,6 +6,6 @@ docker run --rm -v "$HOME":/run/secrets 559
 ```
 2. Create a file "bot-token.txt" in $HOME to store the token
 ```
-cat "token" > $HOME/bot-token.txt
+echo "token" > $HOME/bot-token.txt
 ```
 3. docker run --rm -v "$HOME":/run/secrets abc
