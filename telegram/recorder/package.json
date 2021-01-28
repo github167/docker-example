@@ -1,0 +1,55 @@
+{
+	"name": "telegram-chat-record-bot",
+	"private": true,
+	"version": "1.0.3",
+	"description": "A Telegram Bot to record messages in a given chat for a period of time",
+	"license": "MIT",
+	"repository": "EdJoPaTo/telegram-chat-record-bot",
+	"author": {
+		"name": "EdJoPaTo",
+		"email": "telegram-chat-record-bot@edjopato.de",
+		"url": "https://edjopato.de"
+	},
+	"engines": {
+		"node": ">=14"
+	},
+	"scripts": {
+		"build": "del dist && tsc",
+		"prepack": "npm run build",
+		"start": "ts-node source/index.ts",
+		"test": "tsc && xo"
+	},
+	"main": "dist",
+	"types": "dist",
+	"files": [
+		"dist",
+		"!*.test.*"
+	],
+	"keywords": [
+		"telegram",
+		"record",
+		"log"
+	],
+	"dependencies": {
+		"@edjopato/datastore": "^0.3.2",
+		"@edjopato/telegraf-i18n": "^0.2.0",
+		"source-map-support": "^0.5.16",
+		"telegraf": "^4.0.0",
+		"telegraf-middleware-console-time": "^2.0.0"
+	},
+	"devDependencies": {
+		"@sindresorhus/tsconfig": "^0.8.0",
+		"@types/node": "^14.0.27",
+		"del-cli": "^3.0.0",
+		"ts-node": "^9.0.0",
+		"typegram": "^3.0.2",
+		"typescript": "^4.1.2",
+		"xo": "^0.37.1"
+	},
+	"xo": {
+		"semicolon": false,
+		"rules": {
+			"@typescript-eslint/prefer-readonly-parameter-types": "off"
+		}
+	}
+}
